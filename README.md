@@ -2,20 +2,20 @@
 SpriteKit Game Tutorial by iFIERO.com
 
 
-动画演示 (https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif)
+动画演示 (https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif)<br>
 <img src="https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif">
 
 
-开始场景
-<img src="https://upload-images.jianshu.io/upload_images/3896436-456f003f7378d935.png?imageMogr2/auto-orient/">
+开始场景<br>
+<img src="https://upload-images.jianshu.io/upload_images/3896436-456f003f7378d935.png?imageMogr2/auto-orient/"><br>
 
 
-游戏过程
-<img src="https://upload-images.jianshu.io/upload_images/3896436-c4f787c38d6b8233.png?imageMogr2/auto-orient/">
+游戏过程<br>
+<img src="https://upload-images.jianshu.io/upload_images/3896436-c4f787c38d6b8233.png?imageMogr2/auto-orient/"><br>
 
 
-结束场景
-<img src="https://upload-images.jianshu.io/upload_images/3896436-db986d365000c713.png?imageMogr2/auto-orient/">
+结束场景<br>
+<img src="https://upload-images.jianshu.io/upload_images/3896436-db986d365000c713.png?imageMogr2/auto-orient/"><br>
 
 /*
 
