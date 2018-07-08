@@ -33,7 +33,7 @@ SpriteKit Game Tutorial by iFIERO.com
 Created by VANGO杨 && ANDREW陈
 Copyright © 2018 iFiero. All rights reserved.
 www.iFIERO.com
-iFIERO -- 让手机游戏开发变得简单
+iFIERO -- 为游戏开发深感自豪 BE PROUD OF DEVELOPING GAMES
 FlyingPenguin 飞吧企鹅 在此游戏中您将获得如下技能：
 1、LaunchScreen 学习如何设置游戏启动画面;
 2、Endless Background 无限循环背景;
