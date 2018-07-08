@@ -1,8 +1,8 @@
 # FlyingPenguinSpriteKitGameTutorial
 SpriteKit Game Tutorial by iFIERO.com
 
-<img src="https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif?imageMogr2/auto-orient/strip%7CimageView2/2/w/700">
-动画演示
+<img src="https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif">
+动画演示 (https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif)
 
 <img src="https://upload-images.jianshu.io/upload_images/3896436-456f003f7378d935.png?imageMogr2/auto-orient/">
 开如场景
