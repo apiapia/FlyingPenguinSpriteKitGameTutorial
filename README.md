@@ -1,17 +1,22 @@
 # FlyingPenguinSpriteKitGameTutorial
 SpriteKit Game Tutorial by iFIERO.com
 
-<img src="https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif">
+
 动画演示 (https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif)
+<img src="https://upload-images.jianshu.io/upload_images/3896436-7bc99f99cf931ac8.gif">
 
+
+开始场景
 <img src="https://upload-images.jianshu.io/upload_images/3896436-456f003f7378d935.png?imageMogr2/auto-orient/">
-开如场景
 
-<img src="https://upload-images.jianshu.io/upload_images/3896436-c4f787c38d6b8233.png?imageMogr2/auto-orient/">
+
 游戏过程
+<img src="https://upload-images.jianshu.io/upload_images/3896436-c4f787c38d6b8233.png?imageMogr2/auto-orient/">
 
-<img src="https://upload-images.jianshu.io/upload_images/3896436-db986d365000c713.png?imageMogr2/auto-orient/">
+
 结束场景
+<img src="https://upload-images.jianshu.io/upload_images/3896436-db986d365000c713.png?imageMogr2/auto-orient/">
+
 /*
 
 *** 游戏元素使用条款及注意事项 ***
