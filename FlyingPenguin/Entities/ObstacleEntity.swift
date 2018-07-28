@@ -11,31 +11,28 @@
  *
  * (此处为方法一)
  */
+/*
+ * Entities:   An entity is a representation of an object in your game.
+ * Components: A component contains the logic that performs a specific job on one entity, such as modifying its appearance or shooting a rocket. You make small components for each type of action your entities can do. For example, you might make a movement component, a health component, a melee attack component, and so on.
+ * One of the best benefits of this system is that you can reuse components on as many entities as you want,
+    allowing you to keep your code clean and organized.
+ * Entity:一个entity就是一个对象;
+ * Component: (1)移动、(2)射击、(3)跳跃、(4)色彩等不同组件功能;
+ * 比如：Enity_A包含有(1)(2),Entity_B包含有(2)(3)组件功能,entity就是来管理不同的组件的管理器;
+ */
 
 
 import SpriteKit
 import GameplayKit
 
 class ObstacleEntity:GKEntity {
-    var spriteComponent:SpriteComponent!
+    var spriteComponent:SpriteComponent! // 精灵组件 
     
     init(imageName:String) {
         super.init()
         let texture = SKTexture(imageNamed: imageName)
         spriteComponent = SpriteComponent(entity: self, texture: texture, size: texture.size())
         addComponent(spriteComponent)
-        // Entity 物理体 设置 node
-        /*
-        let node = spriteComponent.node
-        node.zPosition = 2 // 位于树的下层
-        node.anchorPoint = CGPoint(x: 0.5, y: 0)  // x轴为正中心，旋转后才会位于正顶端; y=0 0.5为正中心;
-        node.size.height = 600 //为何调整为高度600：size.height=>1536 - 600 - 600 余236为间隙，让企鹅通过;
-        // 障碍物
-        node.physicsBody = SKPhysicsBody(rectangleOf: (node.texture?.size())!, center: CGPoint(x: 0.5, y: 0.5))// PhysicsBody
-        node.physicsBody?.categoryBitMask    = PhysicsCategory.Obstacle
-        node.physicsBody?.contactTestBitMask = PhysicsCategory.Player
-        node.physicsBody?.collisionBitMask   = PhysicsCategory.None
-        */
     }
     
     required init?(coder aDecoder: NSCoder) {
