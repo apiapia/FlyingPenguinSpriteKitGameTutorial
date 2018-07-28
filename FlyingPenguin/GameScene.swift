@@ -125,8 +125,9 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         setupSceneUI()    /// 取得可视化Scene编辑下的UI元素
         setupPlayer()     /// 加入玩家企鹅
         startWobble()     /// 上下浮动 + 拍打翅膀
-        
+        setupEntityComponent() // 新增测试Entity及组件component的用法 因此会多了一只penguin
         stateMachine.enter(WaitingForTapState.self) /// 进入场景后 直接进入WaitingForTap State
+        
     }
     
     //MARK:- 场景总节点
@@ -241,8 +242,20 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             }
         }
     }
+    func setupEntityComponent(){
+        let penguin = PenguinEntity(imageName: "penguin01") // 企鹅属于worldNode的子层级;
+        let penguinNode = penguin.spriteComponent.node
+        penguinNode.position = CGPoint(x: 320, y: 500)
+        penguinNode.zPosition = 5
+        worldNode.addChild(penguinNode)
+       // penguin有移动的功能
+        penguin.moveComponent.startWobble();
+        
+        penguin.animationComponent.startAnimation()
+    }
     //MARK:- 加入玩家Penguin
     func setupPlayer(){
+        
         playerNode = worldNode.childNode(withName: "player") as! SKSpriteNode // 企鹅属于worldNode的子层级;
         playerTextureAtlas = SKTextureAtlas(named: "penguin")
         for i in 1...playerTextureAtlas.textureNames.count {
@@ -480,20 +493,20 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         // bodyB is Coin 查看Constant.swift的排序;
         let coinAction = SKAction.playSoundFileNamed("coin.wav", waitForCompletion: false)
         worldNode.run(coinAction)
-        // 加入果酱 Juice
-        /*
-         let emitter = SKEmitterNode(fileNamed: "Coin")!
-         emitter.position = nodeA.position
-         worldNode.addChild(emitter)
-         emitter.run(SKAction.sequence([
-         SKAction.wait(forDuration: 0.3),
-         SKAction.run {emitter.removeFromParent()}
-         ])
-         )
-         */
-        //MARK:-JUICE 建立一个路径，绕企鹅一圈
-        //移出B节点;
-        nodeB.removeFromParent()
+        // 加入收集coin特效 position位置;
+        let coinEmitter = SKEmitterNode(fileNamed: "CollectNormal")
+        coinEmitter?.position = (nodeB.position)
+        coinEmitter?.zPosition = 3
+        self.addChild(coinEmitter!)
+        //移除coin
+        nodeB.run(SKAction.sequence([
+            SKAction.scale(to: 0.01, duration: 0.05),
+            SKAction.removeFromParent()]))
+        //移除coin特效节点
+        coinEmitter?.run(SKAction.sequence([
+            SKAction.wait(forDuration: TimeInterval(0.7)),
+            SKAction.removeFromParent(),
+            ]))
     }
     //MARK: - 重新开始游戏;
     func restartGame(){

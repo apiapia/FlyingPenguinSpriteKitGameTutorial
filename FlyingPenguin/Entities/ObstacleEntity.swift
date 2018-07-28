@@ -26,13 +26,15 @@ import SpriteKit
 import GameplayKit
 
 class ObstacleEntity:GKEntity {
-    var spriteComponent:SpriteComponent! // 精灵组件 
-    
+    var spriteComponent:SpriteComponent! // 精灵组件本身
+    // var moveComponent:MoveComponent?  // 没有移动的功能
     init(imageName:String) {
         super.init()
         let texture = SKTexture(imageNamed: imageName)
         spriteComponent = SpriteComponent(entity: self, texture: texture, size: texture.size())
+        //moveComponent = MoveComponent(entity: self, texture: texture, size: texture.size())
         addComponent(spriteComponent)
+        //addComponent(moveComponent!)
     }
     
     required init?(coder aDecoder: NSCoder) {

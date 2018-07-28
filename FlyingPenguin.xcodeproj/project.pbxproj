@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2119D242210C890A007D0BCC /* MoveComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119D241210C890A007D0BCC /* MoveComponent.swift */; };
+		2119D244210C913F007D0BCC /* PenguinEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119D243210C913F007D0BCC /* PenguinEntity.swift */; };
+		2119D246210CA527007D0BCC /* CollectNormal.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2119D245210CA527007D0BCC /* CollectNormal.sks */; };
+		2119D248210CA54B007D0BCC /* Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119D247210CA54B007D0BCC /* Star.png */; };
+		2119D24A210CA563007D0BCC /* bokeh.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119D249210CA563007D0BCC /* bokeh.png */; };
+		2119D24C210CA570007D0BCC /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = 2119D24B210CA570007D0BCC /* spark.png */; };
+		2119D250210CABCE007D0BCC /* AnimationComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2119D24F210CABCE007D0BCC /* AnimationComponent.swift */; };
 		211BBDD320941232000EC02D /* FallingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211BBDD220941232000EC02D /* FallingState.swift */; };
 		211BBDD5209416D9000EC02D /* SKAction+SpecialEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211BBDD4209416D9000EC02D /* SKAction+SpecialEffects.swift */; };
 		211BBDD72094170F000EC02D /* SKTTimingFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 211BBDD62094170F000EC02D /* SKTTimingFunctions.swift */; };
@@ -21,7 +28,6 @@
 		2127A778208E2BE40086B2DF /* CoinSprite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2127A777208E2BE40086B2DF /* CoinSprite.swift */; };
 		2127A77A208ECB040086B2DF /* GameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2127A779208ECB040086B2DF /* GameElements.swift */; };
 		215928FB2090CE770058F5DB /* Trail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 215928FA2090CE760058F5DB /* Trail.sks */; };
-		215928FF2090D1390058F5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 215928FD2090D1390058F5DB /* Assets.xcassets */; };
 		2159290320918B3F0058F5DB /* WaitingForTapState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2159290220918B3F0058F5DB /* WaitingForTapState.swift */; };
 		21592905209192980058F5DB /* PlayingState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21592904209192980058F5DB /* PlayingState.swift */; };
 		21592907209193340058F5DB /* GameOverState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21592906209193340058F5DB /* GameOverState.swift */; };
@@ -46,6 +52,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2119D241210C890A007D0BCC /* MoveComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoveComponent.swift; sourceTree = "<group>"; };
+		2119D243210C913F007D0BCC /* PenguinEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PenguinEntity.swift; sourceTree = "<group>"; };
+		2119D245210CA527007D0BCC /* CollectNormal.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = CollectNormal.sks; sourceTree = "<group>"; };
+		2119D247210CA54B007D0BCC /* Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Star.png; sourceTree = "<group>"; };
+		2119D249210CA563007D0BCC /* bokeh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bokeh.png; path = "Assets.xcassets/Particle Sprite Atlas.spriteatlas/bokeh.imageset/bokeh.png"; sourceTree = "<group>"; };
+		2119D24B210CA570007D0BCC /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = spark.png; path = "Assets.xcassets/Particle Sprite Atlas.spriteatlas/spark.imageset/spark.png"; sourceTree = "<group>"; };
+		2119D24F210CABCE007D0BCC /* AnimationComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationComponent.swift; sourceTree = "<group>"; };
 		211BBDD220941232000EC02D /* FallingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FallingState.swift; sourceTree = "<group>"; };
 		211BBDD4209416D9000EC02D /* SKAction+SpecialEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SKAction+SpecialEffects.swift"; sourceTree = "<group>"; };
 		211BBDD62094170F000EC02D /* SKTTimingFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SKTTimingFunctions.swift; sourceTree = "<group>"; };
@@ -60,7 +73,6 @@
 		2127A777208E2BE40086B2DF /* CoinSprite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSprite.swift; sourceTree = "<group>"; };
 		2127A779208ECB040086B2DF /* GameElements.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameElements.swift; sourceTree = "<group>"; };
 		215928FA2090CE760058F5DB /* Trail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Trail.sks; sourceTree = "<group>"; };
-		215928FD2090D1390058F5DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2159290220918B3F0058F5DB /* WaitingForTapState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingForTapState.swift; sourceTree = "<group>"; };
 		21592904209192980058F5DB /* PlayingState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingState.swift; sourceTree = "<group>"; };
 		21592906209193340058F5DB /* GameOverState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverState.swift; sourceTree = "<group>"; };
@@ -101,6 +113,8 @@
 			isa = PBXGroup;
 			children = (
 				2125C348208DA249001E5BF2 /* SpriteComponent.swift */,
+				2119D241210C890A007D0BCC /* MoveComponent.swift */,
+				2119D24F210CABCE007D0BCC /* AnimationComponent.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -109,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				2125C34A208DA2D4001E5BF2 /* ObstacleEntity.swift */,
+				2119D243210C913F007D0BCC /* PenguinEntity.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -116,8 +131,11 @@
 		215928F52090CDB30058F5DB /* Particles */ = {
 			isa = PBXGroup;
 			children = (
+				2119D245210CA527007D0BCC /* CollectNormal.sks */,
 				215928FA2090CE760058F5DB /* Trail.sks */,
-				215928FD2090D1390058F5DB /* Assets.xcassets */,
+				2119D249210CA563007D0BCC /* bokeh.png */,
+				2119D24B210CA570007D0BCC /* spark.png */,
+				2119D247210CA54B007D0BCC /* Star.png */,
 			);
 			path = Particles;
 			sourceTree = "<group>";
@@ -286,15 +304,18 @@
 				21C9CB37208F266200F635CE /* coin.wav in Resources */,
 				2179667D2089CDF200782BEC /* GameScene.sks in Resources */,
 				217966882089CDF200782BEC /* Assets.xcassets in Resources */,
+				2119D24C210CA570007D0BCC /* spark.png in Resources */,
 				21C9CB3F208F271500F635CE /* jazzmusic.mp3 in Resources */,
 				21C9CB3B208F266200F635CE /* hitGround.wav in Resources */,
 				21C9CB3C208F266200F635CE /* pop.wav in Resources */,
 				21764149208AE970001A25CC /* penguin.atlas in Resources */,
 				21C9CB38208F266200F635CE /* ding.wav in Resources */,
+				2119D24A210CA563007D0BCC /* bokeh.png in Resources */,
 				21C9CB3A208F266200F635CE /* flapping.wav in Resources */,
 				2127A776208DE5CA0086B2DF /* Launch.storyboard in Resources */,
-				215928FF2090D1390058F5DB /* Assets.xcassets in Resources */,
+				2119D248210CA54B007D0BCC /* Star.png in Resources */,
 				21C9CB39208F266200F635CE /* falling.wav in Resources */,
+				2119D246210CA527007D0BCC /* CollectNormal.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,9 +331,12 @@
 				2159290B2092D8E60058F5DB /* CGPoint+Extensions.swift in Sources */,
 				2127A77A208ECB040086B2DF /* GameElements.swift in Sources */,
 				2127A778208E2BE40086B2DF /* CoinSprite.swift in Sources */,
+				2119D244210C913F007D0BCC /* PenguinEntity.swift in Sources */,
+				2119D250210CABCE007D0BCC /* AnimationComponent.swift in Sources */,
 				2176414B208AED4F001A25CC /* Constant.swift in Sources */,
 				211BBDDB209417DC000EC02D /* SKColor+Extensions.swift in Sources */,
 				211BBDD320941232000EC02D /* FallingState.swift in Sources */,
+				2119D242210C890A007D0BCC /* MoveComponent.swift in Sources */,
 				211BBDD9209417A8000EC02D /* SKTEffects.swift in Sources */,
 				211BBDDF20941FC8000EC02D /* SKAction+Extensions.swift in Sources */,
 				211BBDDD20941813000EC02D /* Int+Extensions.swift in Sources */,
